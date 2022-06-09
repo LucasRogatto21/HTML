@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Opinião da Noticia</title>
+
+	<style>
+		h1{
+			text-align: center;
+		}
+		label{
+			display: inline-block;
+			width: 120px;
+			text-align: center;
+			line-height: 2;
+		}
+
+		div{
+			margin: auto;
+			border: 1px solid;
+   			width: 450px;
+		}
+		
+		.botao{
+			position: relative;
+			left: 5%;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	
+	<form action="Formulario.html" method="POST">
+		<div class="CaixaFormulario">
+
+			<h1>Opinião da Notícia</h1>
+
+			<label for="nome">Nome</label>
+			<input type="text" name="nome" id="nome"><br>
+
+			<label for="email">E-mail</label>
+			<input type="email" name="email" id="email" placeholder="address@server"><br>
+
+			<label for="telefone">Telefone</label>
+			<input type="tel" name="Telefone" id="Telefone" placeholder="(XX) XXXXX-XXXX"><br>
+
+
+			<label for="mensagem">mensagem</label>
+			<textarea name="mensagem" id="mensagem" rows="4" cols="30"></textarea><br>
+
+
+			<br>
+			<input class="botao" type="submit" value = "Enviar" name="BotaoEnviar" id="BotaoEnviar">
+			<input class="botao" type="reset" value = "Limpar" name="BotaoLimpar" id="BotaoLimpar">
+		</div>
+	</form>
+
+</body>
+</html>
