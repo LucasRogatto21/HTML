@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TESTE</title>
+
+	<style>
+
+
+	.CaixaFormulario{
+		margin: auto;
+		border: 1px solid;
+	}
+
+	.linha{
+		width: 100px;
+		height: 100px;
+		display: inline-block;
+	}
+
+	div{
+		    display: inline-block;
+
+	}
+	.tudo{
+
+		margin-left: auto;
+	    margin-right: auto;
+	}
+
+	
+
+
+	</style>
+</head>
+<body>
+	
+	<form action="Formulario.html" method="POST">
+	<div class="tudo">
+		<h1>Cadastro Social</h1>
+		
+
+		<div class="CaixaFormulario">
+
+			<label for="nome">Nome</label><br>
+			<input type="text" name="nome" id="nome">
+			<br><br>
+
+
+			<div class="Linha">
+			<div class="teste">
+			<label for="CPF">CPF</label><br>
+			<input type="text" name="CPF" id="CPF" placeholder="999.999.999-99">
+			</div>
+
+			<div class="teste">
+			<label for="DTA_Nascimento">Data de nascimento</label><br>
+			<input type="text" name="DTA_Nascimento" id="DTA_Nascimento" placeholder="__/__/____">
+			</div>
+
+			<div class="teste">
+			<label>Sexo</label><br>
+			<input type="radio" name="Sexo" value="M">Masculino
+			<input type="radio" name="Sexo" value="F">Feminino
+			</div>
+			
+			</div>
+
+			<br><br>
+
+			<label for="Endereco">Endereço</label><br>
+			<input type="text" name="Endereco" id="Endereco">
+
+			<br><br>
+			<div class="Linha">
+
+				
+			<label for="Logradouro">Logradouro</label>
+			<input type="text" name="Logradouro" id="Logradouro">
+
+			<label for="N_Casa">Número</label>
+			<input type="number" name="N_Casa" id="N_Casa" step="1">
+
+			<label for="Complemento">Complemento</label>
+			<input type="text" name="Complemento" id="Complemento">
+
+			</div>
+			<br><br>
+
+			<div class="Linha">
+			
+			<label for="estado">Estado</label>
+			<select name="estado" id="estado">
+				<option value="SP" selected>São Paulo</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="RS">Rio Grande do Sul</option>
+				<option value="PR">Paraná</option>
+				<option value="BA">Bahia</option>
+			</select>
+
+			<label for="Cidade">Cidade</label>
+			<input type="text" name="Cidade" id="Cidade">
+			</div>
+	</div>
+
+			<br>
+			<input class="botao" type="submit" value = "Cadastrar" name="BotaoCadastrar" id="BotaoCadastrar">
+			
+		</div>
+	</form>
+
+</body>
+</html>
